@@ -4,14 +4,14 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './components/Header';
 import UsersList from './components/Users/UsersList';
 import User from './components/Users/User';
-import Post from './components/Posts/Post';
+import Post from './components/Posts/PostItem';
 
 function App() {
   return (
     <div className='ui container'>
       <BrowserRouter>
-        <div>
-          <Header />
+        <Header />
+        <div className='body'>
           <Route path='/' exact component={UsersList} />
           <Route path='/users/:id' exact component={User} />
           <Route path='/posts/:id' exact component={Post} />
