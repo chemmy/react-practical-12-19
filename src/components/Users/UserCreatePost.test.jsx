@@ -5,7 +5,7 @@ import userEvent from "@testing-library/user-event";
 
 import { UserCreatePost } from "./UserCreatePost";
 
-describe("<UserCreatePost />", () => {
+describe("Component <UserCreatePost />", () => {
   const postTitle = "New Post";
   const postBody = "A sample post body";
   const createUserPost = jest.fn();
