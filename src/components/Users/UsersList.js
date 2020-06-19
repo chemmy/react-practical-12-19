@@ -10,7 +10,7 @@ function UsersList({ users = [], getUsers }) {
   }, []);
 
   return (
-    <div className="users-list">
+    <div className="users-list" data-testid="users-list">
       <div className="ui divided items">
         {users.map((user, idx) => (
           <div data-testid="user-list-item" key={idx}>
